@@ -1,0 +1,295 @@
+body {
+    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: black;
+    background-color: white;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: black;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    color: white;
+    z-index: 100;
+    height: 50px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+#nav-div {
+    flex-direction: column;
+}
+
+/* checkbox hack start*/
+.aside-icon {
+    width: 50px;
+    height: 50px;
+    top: 2px;
+    position: absolute;
+    top: 100px;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.6s all;
+}
+
+
+
+label[for="toggle"] {
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    top: -100px;
+    display: none;
+}
+
+aside {
+    background-color: #004085;
+    color: white;
+
+    width: 400px;
+    height: 90%;
+    padding: 10px;
+    padding-left: 4%;
+    position: fixed;
+    top: 5%;
+    left: -395px;
+    z-index: 9;
+    transition: 0.6s all;
+}
+
+@media (max-width: 400px)
+{
+    aside{
+        width:100%;
+    }   
+}
+
+input[type="checkbox"]:checked+aside {
+    left: 0px;
+}
+
+input[type="checkbox"]:checked+aside+label {
+    left: 0px;
+    top: 0px
+}
+
+/* checkbox hack end */
+.aside-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.fly-icon {
+    position: absolute;
+}
+
+.row {
+    padding-left: 15%;
+    padding-right: 5%;
+}
+
+.page-name {
+    display: inline-block;
+}
+
+.nav {
+    display: inline-block;
+    width: 80%;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+
+}
+
+.search-button {
+    width: 5%;
+    margin-top: 16px;
+    background-image: url("../images/search.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+    width: 13px;
+    height: 19px;
+}
+
+
+
+.search-button {}
+
+nav div {
+    height: 100%;
+}
+
+@Media (max-width: 700px) {
+    .nav {
+        display: none;
+    }
+}
+
+/*-------------------------------------- nav end */
+
+.billboard {
+    position: relative;
+    width: 100%;
+    background-color: black;
+}
+
+.billboard-p {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 120px;
+    z-index: 3;
+    color: white;
+
+}
+
+.billboard-img {
+    width: 100%;
+    opacity: 0.5;
+    transition: all 1.5s linear;
+    cursor: pointer;
+
+}
+
+.pos-bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 1;
+
+}
+
+
+
+/* billbord end */
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0;
+
+    position: relative;
+
+}
+
+.content a {
+    text-decoration: none;
+    color: black;
+}
+
+.panel {
+    width: 100%;
+    position: relative;
+    background-color: white;
+}
+
+#video1,
+#video2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    
+}
+
+#nav-div {
+    height: 100%;
+}
+
+
+.active-panel {
+    z-index: 10;
+}
+
+.box-space {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box .item {
+    padding: 10px;
+    width: 150px;
+    max-height: 150px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+.box a {
+    display: block;
+}
+
+.box .item h3 {
+    margin-bottom: 0;
+
+}
+
+.box .item p {
+    font-size: small;
+}
+
+
+.box img {
+    max-width: 35px;
+    min-width: 35px;
+    border-radius: 30px;
+    float: left;
+}
+
+.box h3,
+.box p {
+    margin-left: 32px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+iframe+button {
+    margin-left: 45%;
+    opacity: 0.5;
+    border-radius: 30px;
+}
+
+/* content end */
+
+footer {
+    background-color: rgb(5, 5, 16);
+    display: grid;
+    color: #6F6F6F;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 9pt;
+}
+
+footer img {
+    border-radius: 30px;
+}
+
+nav label img {
+    border-radius: 30px;
+}
