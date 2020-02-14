@@ -210,8 +210,15 @@ nav div {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70%;
+    height: 90%;
     
+}
+
+@media (max-width: 400px)
+{
+    #video1,#video2{
+        height:60%;
+    }
 }
 
 #nav-div {
